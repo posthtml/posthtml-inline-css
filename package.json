@@ -1,7 +1,7 @@
 {
   "name": "posthtml-inline-css",
   "version": "0.0.0",
-  "description": "CSS inliner",
+  "description": "PostHTML CSS Inliner",
   "main": "index.js",
   "author": "Kirill Maltsev <maltsevkirill@gmail.com>",
   "license": "MIT",
@@ -18,6 +18,7 @@
     "css",
     "inliner",
     "inline",
+    "postproccessor",
     "style"
   ],
   "babel": {
@@ -40,5 +41,13 @@
     "lodash": "^3.10.1",
     "mocha": "^2.3.4",
     "posthtml": "^0.7.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/maltsev/posthtml-inline-css.git"
+  },
+  "bugs": {
+    "url": "https://github.com/maltsev/posthtml-inline-css/issues"
+  },
+  "homepage": "https://github.com/maltsev/posthtml-inline-css"
 }
