@@ -11,6 +11,15 @@
     "pretest": "npm run lint",
     "test": "node_modules/.bin/_mocha --compilers js:babel-core/register"
   },
+  "keywords": [
+    "posthtml",
+    "posthtml-plugin",
+    "html",
+    "css",
+    "inliner",
+    "inline",
+    "style"
+  ],
   "babel": {
     "presets": [
       "es2015"
