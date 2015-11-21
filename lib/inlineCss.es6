@@ -1,4 +1,3 @@
-import 'babel-polyfill';
 import postcss from 'postcss';
 import matchHelper from 'posthtml-match-helper';
 import { extendStyle } from './helpers';

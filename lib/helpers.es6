@@ -1,10 +1,13 @@
+import objectAssign from 'object-assign';
+
+
 export function extendStyle(htmlNode, cssNode) {
     htmlNode.attrs = htmlNode.attrs || {};
     htmlNode.attrs.style = htmlNode.attrs.style || '';
 
     const htmlNodeCss = parseCssFromStyle(htmlNode.attrs.style);
     const cssNodeCss = parseCssFromNode(cssNode);
-    const newCss = Object.assign({}, htmlNodeCss, cssNodeCss);
+    const newCss = objectAssign({}, htmlNodeCss, cssNodeCss);
     htmlNode.attrs.style = stringifyCss(newCss);
 
     return htmlNode;
