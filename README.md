@@ -1,4 +1,7 @@
 # PostHTML CSS Inliner
+[![npm version](https://badge.fury.io/js/posthtml-inline-css.svg)](http://badge.fury.io/js/posthtml-inline-css)
+
+[PostHTML](https://github.com/posthtml/posthtml) plugin for inline CSS to style attrs
 
 ```js
 var posthtml = require('posthtml'),
