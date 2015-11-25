@@ -3,8 +3,8 @@ import posthtml from 'posthtml';
 import postcss from 'postcss';
 import inlineCss from '..';
 
-const css = 'div { color: red; padding: 1px }' +
-            '.lead { font-size: 14px; color: blue }';
+const css = '.lead { font-size: 14px; color: blue }' +
+            'div { color: red; padding: 1px }';
 
 const html = '<div style="margin: 0; color: blue">hello</div>' +
              '<div class="lead">world</div>';
