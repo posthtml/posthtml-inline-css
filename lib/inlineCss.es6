@@ -5,9 +5,13 @@ import { extendStyle } from './helpers';
 
 export default css => {
     return function inlineCss(tree) {
-        postcss.parse(css).each(cssNode => {
-            tree.match(matchHelper(cssNode.selector), htmlNode => {
-                return extendStyle(htmlNode, cssNode);
+        var postcssObj = css.then ? css : postcss().process(css);
+
+        return postcssObj.then(result => {
+            return result.root.each(cssNode => {
+                tree.match(matchHelper(cssNode.selector), htmlNode => {
+                    return extendStyle(htmlNode, cssNode);
+                });
             });
         });
     };
