@@ -19,7 +19,7 @@ posthtml([require('posthtml-inline-css')(css)])
 ```
 
 
-### <style>
+### &lt;style&gt;
 ```js
 var posthtml = require('posthtml'),
     html = '<style>div { color: red }</style><div>Hello!</div>';
