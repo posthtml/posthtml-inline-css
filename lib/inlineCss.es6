@@ -1,6 +1,6 @@
 import postcss from 'postcss';
 import matchHelper from 'posthtml-match-helper';
-import { extendStyle, sortCSSNodesBySpecificity } from './helpers';
+import { extendStyle, sortCssNodesBySpecificity } from './helpers';
 
 
 export default css => {
@@ -8,7 +8,7 @@ export default css => {
         var postcssObj = css.then ? css : postcss().process(css);
 
         return postcssObj
-            .then(result => sortCSSNodesBySpecificity(result.root.nodes))
+            .then(result => sortCssNodesBySpecificity(result.root.nodes))
             .then(cssNodes => {
                 cssNodes.forEach(cssNode => {
                     tree.match(matchHelper(cssNode.selector), htmlNode => {

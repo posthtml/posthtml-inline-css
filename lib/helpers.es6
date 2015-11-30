@@ -15,7 +15,7 @@ export function extendStyle(htmlNode, cssNode) {
 }
 
 
-export function sortCSSNodesBySpecificity(nodes) {
+export function sortCssNodesBySpecificity(nodes) {
     // Sort CSS nodes by specificity (ascending): div - .foo - #bar
     return nodes.sort((a, b) => {
         a = getSpecificity(a.selector);

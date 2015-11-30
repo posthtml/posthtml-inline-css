@@ -1,11 +1,11 @@
 import expect from 'expect';
-import { sortCSSNodesBySpecificity } from '../lib/helpers';
+import { sortCssNodesBySpecificity } from '../lib/helpers';
 
 describe('Helpers', () => {
-    it('sortCSSNodesBySpecificity()', () => {
+    it('sortCssNodesBySpecificity()', () => {
         const cssNodes = [{selector: '#foo'}, {selector: '.bar'}, {selector: 'div'}];
         const sortedCssNodes = [{selector: 'div'}, {selector: '.bar'}, {selector: '#foo'}];
 
-        expect(sortCSSNodesBySpecificity(cssNodes)).toEqual(sortedCssNodes);
+        expect(sortCssNodesBySpecificity(cssNodes)).toEqual(sortedCssNodes);
     });
 });
