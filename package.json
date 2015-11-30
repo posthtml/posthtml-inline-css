@@ -1,6 +1,6 @@
 {
   "name": "posthtml-inline-css",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "PostHTML CSS Inliner",
   "main": "index.js",
   "author": "Kirill Maltsev <maltsevkirill@gmail.com>",
