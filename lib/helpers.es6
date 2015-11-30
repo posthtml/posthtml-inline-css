@@ -40,10 +40,10 @@ function getSpecificity(selector) {
 
     const specificityResult = specificity.calculate(selector)[0];
     const specificityParts = specificityResult.specificity.split(',').reverse();
-    // Convert "0,1,3,2" to 132 (2*1 + 3*10 + 1*100 + 0*1000)
+    // Convert "0,1,3,2" to 10302 (2*1 + 3*100 + 1*10'000 + 0*1'000'000)
     const totalSpecificity = specificityParts.reduce((totalSpecificity, specificity, i) => {
         specificity = parseInt(specificity, 10);
-        return totalSpecificity + (specificity * Math.pow(10, i));
+        return totalSpecificity + (specificity * Math.pow(10, i * 2));
     }, 0);
 
     specificityCache[selector] = totalSpecificity;
