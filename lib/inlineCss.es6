@@ -1,12 +1,15 @@
 import postcss from 'postcss';
 import matchHelper from 'posthtml-match-helper';
-import { extendStyle, sortCssNodesBySpecificity } from './helpers';
+import { extendStyle, sortCssNodesBySpecificity, getCssFromStyleTags } from './helpers';
 
 
 export default css => {
     return function inlineCss(tree) {
-        var postcssObj = css.then ? css : postcss().process(css);
+        if (! css) {
+            css = getCssFromStyleTags(tree);
+        }
 
+        var postcssObj = css.then ? css : postcss().process(css);
         return postcssObj
             .then(result => sortCssNodesBySpecificity(result.root.nodes))
             .then(cssNodes => {

@@ -32,6 +32,17 @@ export function sortCssNodesBySpecificity(nodes) {
 }
 
 
+export function getCssFromStyleTags(htmlTree) {
+    var css = [];
+    htmlTree.match({tag: 'style'}, tag => {
+        css = css.concat(tag.content || []);
+        return tag;
+    });
+
+    return css.join(' ');
+}
+
+
 var specificityCache = {};
 function getSpecificity(selector) {
     if (specificityCache[selector] !== undefined) {
