@@ -18,8 +18,8 @@ export function extendStyle(htmlNode, cssNode) {
 export function sortCssNodesBySpecificity(nodes) {
     // Sort CSS nodes by specificity (ascending): div - .foo - #bar
     return nodes.sort((a, b) => {
-        a = getSpecificity(a.selector);
-        b = getSpecificity(b.selector);
+        a = typeof a.selector == 'string' ? getSpecificity(a.selector) : 0;
+        b = typeof b.selector == 'string' ? getSpecificity(b.selector) : 0;
 
         if (a > b) {
             return 1;

@@ -36,6 +36,13 @@ describe('Plugin', () => {
             expect(html).toBe(expectedHtmlWithStyle);
         });
     });
+
+    it('should properly process any other nodes', () => {
+        var css = '@media {}/* comment */.test {color: red;}';
+        var html = '<div class="test">olala</div>';
+        var expectedHtml = '<div class="test" style="color: red">olala</div>';
+        return initPlugin(css, html).then(html => expect(html).toBe(expectedHtml));
+    });
 });
 
 
