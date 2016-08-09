@@ -32,18 +32,18 @@
     "postcss": "^5.0.12",
     "posthtml-attrs-parser": "^0.1.0",
     "posthtml-match-helper": "^1.0.1",
-    "specificity": "^0.1.4"
+    "specificity": "^0.2.0"
   },
   "devDependencies": {
     "babel-cli": "^6.1.18",
     "babel-core": "^6.1.21",
     "babel-eslint": "^6.0.0",
     "babel-preset-es2015": "^6.1.18",
-    "eslint": "^2.0.0",
+    "eslint": "^3.0.0",
     "expect": "^1.13.0",
     "lodash": "^4.0.0",
-    "mocha": "^2.3.4",
-    "posthtml": "^0.8.0"
+    "mocha": "^3.0.0",
+    "posthtml": "^0.9.0"
   },
   "repository": {
     "type": "git",
