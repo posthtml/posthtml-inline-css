@@ -5,7 +5,7 @@ import { extendStyle, sortCssNodesBySpecificity, getCssFromStyleTags } from './h
 
 export default css => {
     return function inlineCss(tree) {
-        if (! css) {
+        if (!css || !Object.keys(css).length) {
             css = getCssFromStyleTags(tree);
         }
 

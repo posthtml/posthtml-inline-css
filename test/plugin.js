@@ -14,6 +14,10 @@ const expectedHtml = '<div style="margin: 0; color: red; padding: 1px">hello</di
                      '<div class="lead" style="color: blue; padding: 1px; font-size: 14px">world</div>';
 
 describe('Plugin', () => {
+    it('should not broken if options empty object', () => {
+        return initPlugin({}, '<div></div>').then(html => expect(html).toBe('<div></div>'));
+    });
+
     it('should inline plain CSS', () => {
         return initPlugin(css, html).then(html => expect(html).toBe(expectedHtml));
     });
