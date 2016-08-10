@@ -39,7 +39,7 @@
     "babel-core": "^6.1.21",
     "babel-eslint": "^6.0.0",
     "babel-preset-es2015": "^6.1.18",
-    "eslint": "^3.0.0",
+    "eslint": "^2.13.1",
     "expect": "^1.13.0",
     "lodash": "^4.0.0",
     "mocha": "^3.0.0",
