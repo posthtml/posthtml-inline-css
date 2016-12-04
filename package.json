@@ -47,10 +47,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/maltsev/posthtml-inline-css.git"
+    "url": "git://github.com/posthtml/posthtml-inline-css.git"
   },
   "bugs": {
-    "url": "https://github.com/maltsev/posthtml-inline-css/issues"
+    "url": "https://github.com/posthtml/posthtml-inline-css/issues"
   },
-  "homepage": "https://github.com/maltsev/posthtml-inline-css"
+  "homepage": "https://github.com/posthtml/posthtml-inline-css"
 }

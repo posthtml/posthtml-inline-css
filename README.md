@@ -1,6 +1,6 @@
-# posthtml-inline-css [![npm version](https://badge.fury.io/js/posthtml-inline-css.svg)](http://badge.fury.io/js/posthtml-inline-css) [![Build Status](https://travis-ci.org/maltsev/posthtml-inline-css.svg?branch=master)](https://travis-ci.org/maltsev/posthtml-inline-css)
+# posthtml-inline-css [![npm version](https://badge.fury.io/js/posthtml-inline-css.svg)](http://badge.fury.io/js/posthtml-inline-css) [![Build Status](https://travis-ci.org/posthtml/posthtml-inline-css.svg?branch=master)](https://travis-ci.org/posthtml/posthtml-inline-css)
 
-[PostHTML](https://github.com/posthtml/posthtml) plugin for inlining CSS to style attrs
+[PostHTML](https://github.com/posthtml/posthtml) plugin for inlining CSS to style attrs.
 
 ## Usage
 ### Plain CSS
