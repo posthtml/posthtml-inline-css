@@ -2,6 +2,9 @@
 
 [PostHTML](https://github.com/posthtml/posthtml) plugin for inlining CSS to style attrs.
 
+Many modern email clients nowadays support CSS in a `<style>`, so you might not need to inline CSS.
+See [that discussion](https://github.com/posthtml/posthtml-inline-css/issues/14).
+
 ## Usage
 ### Plain CSS
 ```js
